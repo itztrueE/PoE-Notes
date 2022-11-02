@@ -1,0 +1,12 @@
+{% extends "templates.html" %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/abouts.css') }}">
+    <script src="{{ url_for('static', filename='js/abouts.js') }}"></script>
+{% endblock %}
+{% block body %}
+    {{ super() }}
+    <div class="container">
+        <pre> 製作網站主要目的是記錄有趣的想法、知識及實用的工具。為什麼要記錄？我想記錄這些想法讓一些也喜歡研究流派的人有不同的點子。(其實原因有很多，但我想主要是大家都是參考巴哈姆特或忍者互抄) </pre>
+    </div>
+{% endblock %}
